@@ -1,0 +1,12 @@
+# FOR URL REWRITING
+# PG
+<IfModule mod_rewrite.c>
+RewriteEngine on
+
+# for get log result
+RewriteRule ^galr/?$ get_admin_log_result.xhr.php
+
+# for get seller log result
+RewriteRule ^gslr/?$ get_seller_log_result.xhr.php
+
+</IfModule>

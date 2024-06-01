@@ -1,0 +1,15 @@
+# FOR URL REWRITING
+# PG
+<IfModule mod_rewrite.c>
+RewriteEngine on
+
+# for get product result
+RewriteRule ^gpr/?$ get_product_result.xhr.php
+
+# for get recommended
+RewriteRule ^gscd/([\d]+)/([\w\s\d]*)/?$ get_sub_category_data.xhr.php?i=$1&d=$2
+
+# for notification counter
+RewriteRule ^gnc/([\w]+)/?$ get_notification_counter.xhr.php?t=$1
+
+</IfModule>

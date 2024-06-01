@@ -1,0 +1,47 @@
+# FOR URL REWRITING
+# PG
+<IfModule mod_rewrite.c>
+RewriteEngine on
+
+# for login
+RewriteRule ^l/?$ login.xhr.php
+
+# for logout
+RewriteRule ^lg/?$ logout.xhr.php
+
+# for process_forgot_password_email
+RewriteRule ^pfpe/?$ process_forgot_password_email.xhr.php
+
+# for process_forgot_password_code
+RewriteRule ^pfpc/?$ process_forgot_password_code.xhr.php
+
+# for process_forgot_password_password
+RewriteRule ^pfpp/?$ process_forgot_password_password.xhr.php
+
+# for insert bank details
+RewriteRule ^ibd/?$ insert_bank_details.xhr.php
+
+# for insert seller request
+RewriteRule ^islrq/?$ insert_seller_request.xhr.php
+
+# for insert product
+RewriteRule ^ip/?$ insert_product.xhr.php
+
+# for update product
+RewriteRule ^up/?$ update_product.xhr.php
+
+# for change status
+RewriteRule ^cs/([\w]+)/([\d]+)/([\w]+)/?$ change_status.xhr.php?t=$1&i=$2&s=$3
+
+# for delete content
+RewriteRule ^dc/([\w]+)/([\d]+)/?$ delete_content.xhr.php?t=$1&i=$2
+
+# for change image
+RewriteRule ^ci/?$ change_image.xhr.php
+
+# for remove image
+RewriteRule ^ri/([\w]+)/([\d]+)/?$ remove_image.xhr.php?t=$1&i=$2
+
+# for change_password
+RewriteRule ^cp/?$ change_password.xhr.php
+</IfModule>

@@ -1,0 +1,42 @@
+# FOR URL REWRITING
+# PG
+<IfModule mod_rewrite.c>
+RewriteEngine on
+
+# for get admin result
+RewriteRule ^gar/?$ get_admin_result.xhr.php
+
+# for get seller result
+RewriteRule ^gslr/?$ get_seller_result.xhr.php
+
+# for get social_handle result
+RewriteRule ^gshr/?$ get_social_handle_result.xhr.php
+
+# for get message result
+RewriteRule ^gmr/?$ get_message_result.xhr.php
+
+# for get category result
+RewriteRule ^gcr/?$ get_category_result.xhr.php
+
+# for get subcategory result
+RewriteRule ^gscr/?$ get_subcategory_result.xhr.php
+
+# for get product result
+RewriteRule ^gpr/?$ get_product_result.xhr.php
+
+# for get user result
+RewriteRule ^gur/?$ get_user_result.xhr.php
+
+# for get order result
+RewriteRule ^gor/?$ get_order_result.xhr.php
+
+# for get refund result
+RewriteRule ^grr/?$ get_refund_result.xhr.php
+
+# for get return result
+RewriteRule ^grtr/?$ get_return_result.xhr.php
+
+# for get request result
+RewriteRule ^gslrqr/?$ get_request_result.xhr.php
+
+</IfModule>

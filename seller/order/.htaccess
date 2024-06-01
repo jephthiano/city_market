@@ -1,0 +1,12 @@
+# FOR URL REWRITING
+# PG
+<IfModule mod_rewrite.c>
+RewriteEngine on
+
+# for track
+RewriteRule ^track/([\d]*)/?$ track.enc.php?val=$1
+
+# for index
+RewriteRule ^([\w\s-]*)/([\d]*)/?$ index.php?type=$1&page=$2
+
+</IfModule>

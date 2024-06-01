@@ -1,0 +1,11 @@
+# FOR URL REWRITING
+# PG
+<IfModule mod_rewrite.c>
+RewriteEngine on
+
+# for change_password
+RewriteRule ^change_password/?$ change_password.enc.php
+
+# for index
+RewriteRule ^[\w]/?$ index.php
+</IfModule>

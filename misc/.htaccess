@@ -1,0 +1,24 @@
+# FOR URL REWRITING
+# PG
+<IfModule mod_rewrite.c>
+RewriteEngine on
+
+# about us
+RewriteRule ^about_us/?$ about_us.enc.php
+
+# contact us
+RewriteRule ^contact_us/?$ contact_us.enc.php
+
+# become seller
+RewriteRule ^become_seller/?$ become_seller.enc.php
+
+# term of service
+RewriteRule ^terms_of_service/?$ terms_of_service.enc.php
+
+# privacy policy
+RewriteRule ^privacy_policy/?$ privacy_policy.enc.php
+
+# faq
+RewriteRule ^faq/?$ faq.enc.php
+
+</IfModule>

@@ -1,0 +1,9 @@
+# FOR URL REWRITING
+# PG
+<IfModule mod_rewrite.c>
+RewriteEngine on
+
+# product details
+RewriteRule ^([\d]+)/?$ index.php?val=$1
+
+</IfModule>

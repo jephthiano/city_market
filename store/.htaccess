@@ -1,0 +1,8 @@
+# FOR URL REWRITING
+<IfModule mod_rewrite.c>
+RewriteEngine on
+
+# for index
+RewriteRule ^([\w\+\s\-\&\,\;\'\:]*)/([\d]*)/?$ index.php?val=$1&page=$2
+
+</IfModule>
